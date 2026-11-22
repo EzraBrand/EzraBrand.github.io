@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moved</title>
+<script>
+// Old ezrabrand.github.io/<repo>/ paths of works that moved to openseforim.org.
+// Add one line for each repo you move.
+var MOVED = {
+  "emden-megillat-sefer": "https://openseforim.org/emden/"
+};
+(function () {
+  var parts = location.pathname.split("/").filter(Boolean);
+  var dest = parts.length && MOVED[parts[0]];
+  if (dest) {
+    location.replace(dest + parts.slice(1).join("/") + location.search + location.hash);
+  }
+})();
+</script>
+<style>body{font:17px/1.6 Georgia,serif;max-width:40em;margin:60px auto;padding:0 16px}</style>
+</head><body>
+<h1>Page not found</h1>
+<p>Some works moved to <a href="https://openseforim.org/">openseforim.org</a>.
+Blog: <a href="https://www.ezrabrand.com/">ezrabrand.com</a>.</p>
+</body></html>
